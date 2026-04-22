@@ -1,88 +1,61 @@
 🚗 BMW Sales & Performance Dashboard
 
-An end-to-end Business Intelligence project built with Power BI, covering data cleaning, data modeling, and interactive dashboard development to analyze BMW sales performance and profitability.
+An interactive Power BI dashboard that analyzes BMW sales data to uncover insights about revenue, profitability, and performance trends.
 
-📁 Repository Structure
-BMW-project/
-│
-├── 📂 Dashboard/           # Power BI report file (.pbix)
-├── 📂 datamodeling/        # Data model, relationships, and DAX measures
-├── 📂 uncleandData/        # Raw data before cleaning
-├── 📄 README.md            # Project documentation
-🎯 Project Overview
+📌 Overview
 
-This project delivers a comprehensive BMW Sales & Performance Dashboard designed to analyze sales data and extract actionable insights. It follows the full BI lifecycle, starting from raw data to a fully interactive dashboard that supports data-driven decision-making.
+This project focuses on transforming raw BMW sales data into meaningful insights using Power BI.
+It provides a clear view of business performance through interactive visualizations and key performance indicators (KPIs).
 
-The dashboard enables stakeholders to monitor performance, track KPIs, and explore trends across products, regions, and time periods.
+The dashboard helps in understanding sales behavior, identifying top-performing products, and tracking performance over time to support better decision-making.
 
-🔄 Project Workflow
-1. 🗃️ Data Collection & Exploration
-Collected raw BMW sales data from multiple sources
-Explored dataset structure and identified data quality issues
-2. 🧹 Data Cleaning & Transformation
-Handled missing values and duplicates
-Standardized formats and column names
-Applied transformations using Power Query (M Language)
-3. 🔗 Data Modeling
-Built a structured Star Schema
-Created relationships between tables
-Developed calculated columns and DAX measures
-4. 📈 Dashboard Development
-Designed an interactive Power BI dashboard
-Added slicers, filters, and drill-through features
-Created visuals for clear and effective storytelling
-📌 Key Metrics & KPIs
-KPI	Description
-Total Sales	Total revenue generated
-Total Profit	Net profit after costs
-Profit Margin %	Profit relative to sales
-Sales Growth	Performance over time
-Top Models	Best-selling BMW models
-Regional Performance	Sales by region
-📊 Dashboard Features
-Sales Overview — KPIs with trends
-Profit Analysis — Margin insights
-Product Performance — Top & low-performing models
-Time Analysis — Monthly & yearly trends
-Interactive Filters — Dynamic exploration
-Drill-Through — Detailed analysis
+🎯 Objectives
+Analyze overall sales and profit performance
+Track important KPIs (Sales, Profit, Growth)
+Identify top-performing products
+Discover trends and patterns over time
+Support data-driven business decisions
+
+
+📊 Dashboard Highlights
+📈 Sales Overview — High-level KPIs with trend analysis
+💰 Profit Analysis — Understanding profitability and margins
+🚗 Product Performance — Top and low-performing BMW models
+⏳ Time Analysis — Sales trends across different periods
+🎛️ Interactive Filters — Dynamic exploration of the data
 🛠️ Tools & Technologies
-Tool	Purpose
-Power BI Desktop	Dashboard & modeling
-Power Query (M)	Data transformation
-DAX	Measures & KPIs
-Excel / CSV	Data source
-Git & GitHub	Version control
-💡 DAX Measures (Examples)
-Total Sales = SUM(Sales[SalesAmount])
-
-Total Profit = SUM(Sales[Profit])
-
-Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
-
-YTD Sales = TOTALYTD([Total Sales], 'Date'[Date])
-
-Sales PY = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))
-🚀 Getting Started
-Prerequisites
 Power BI Desktop
-Steps
-Clone the repository
+Power Query (Data Cleaning & Transformation)
+DAX (Measures & KPIs)
+🔄 Project Workflow
+🧹 Data Preparation
+Cleaned and transformed raw data
+Handled missing values and inconsistencies
+🔗 Data Modeling
+Created relationships between tables
+Built calculated measures using DAX
+📊 Visualization
+Designed an interactive and user-friendly dashboard
+Used charts, KPIs, and filters for better storytelling
+📈 Key Insights
+Clear visibility of total sales and profit
+Identification of best-performing products
+Detection of trends and seasonal patterns
+Insights that support better strategic decisions
+🚀 Getting Started
+1. Clone the repository
 git clone https://github.com/Salma-rar/BMW-project.git
-Open .pbix file in Power BI
-Explore dashboard and interact with filters
-📂 Data Description
-Folder	Description
-uncleandData/	Raw dataset
-datamodeling/	Data model & DAX
-Dashboard/	Final dashboard
+2. Open the project
+Open the .pbix file using Power BI Desktop
+3. Explore
+Use filters and visuals to interact with the dashboard
 👩‍💻 Author
 
 Salma Elhwary
+🔗 GitHub: https://github.com/Salma-rar
 
-GitHub: https://github.com/Salma-rar
-📄 License
+⭐ Support
 
-MIT License
+If you like this project, consider giving it a ⭐ on GitHub!
 
 Built with ❤️ using Power BI
